@@ -7,3 +7,4 @@ Tipos  de  dados  primitivos,  declaração  de  variáveis  e  constantes,  exp
 Unidade II – Estruturas de Controle  Estruturas de decisão condicionais (if, switch, if ternário), Estruturas de repetição (while, do while, for),Estruturas de dados lineares: vetores e matrizes, Estrutura de repetição sobre vetores (for each).	
 
 Unidade III – Programação Orientada a Objetos  Introdução aos conceitos da Programação Orientada a Objetos, Definição de classes, objetos, atributos e métodos , 																	
+Ir para [Aula 01](https://github.com/raianecj/ltpoo-java/tree/main/aula-01).
