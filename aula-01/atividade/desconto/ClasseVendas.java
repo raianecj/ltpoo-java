@@ -1,9 +1,10 @@
 package br.com.desconto;
 
 public class ClasseVendas {
-    private int valor;
+    private double valor;
+            double desconto;
 
-    public int getValor() {
+    public double getValor() {
         return valor;
     }
 
@@ -11,11 +12,13 @@ public class ClasseVendas {
         this.valor = valor;
     }
     
-    public int calcularDesconto(){
+    public double calcularDesconto(){
         if (valor < 500){
-            return this.valor*5/100;
-        } else
-        return this.valor*10/100;
+            desconto = this.valor -(this.valor*0.05);
+        } else if(this.valor >=500){
+            desconto = this.valor - (this.valor*0.1);
+        }
+        return desconto;
             
     }
 }
