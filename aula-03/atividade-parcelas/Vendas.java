@@ -1,9 +1,9 @@
 package br.com.controle;
 
-public class Calculos {
-    private double valor;
-            int parcelas;
-            double valorFinal;
+public class Vendas {
+    private double valor;       //qnd coloca visibilidade vira atributo 
+    private int parcelas;       //atributo
+            double valorFinal;  //variavel
 
     public double getValor() {
         return valor;
@@ -29,14 +29,14 @@ public class Calculos {
         this.valorFinal = valorFinal;
     }
     public double calcular(){
-        if (parcelas == 1){
+        if (this.parcelas <= 1){
             valorFinal = this.valor - (this.valor*0.1);
-        } else if ((parcelas > 1)&&(parcelas<=3)){
+        } else if ((this.parcelas > 1)&&(this.parcelas<=3)){
             valorFinal = this.valor + (this.valor*0.05);
-        } else if (parcelas > 3){
+        } else if (this.parcelas > 3){
             valorFinal = this.valor +(this.valor*0.1);
         }
         return valorFinal;
     }
-
+            
 }
