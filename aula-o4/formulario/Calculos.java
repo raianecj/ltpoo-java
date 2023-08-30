@@ -21,7 +21,16 @@ public class Calculos {
         this.valor2 = valor2;
     }
     public double somar(){
-        return this.valor1+this.valor2;
+        return this.valor1 + this.valor2;
+    }
+    public double subtrair(){
+        return this.valor1 - this.valor2;
+    }
+    public double multiplicar(){
+        return this.valor1 * this.valor2;
+    }
+    public double dividir(){
+        return this.valor1 / this.valor2;
     }
     
 }
