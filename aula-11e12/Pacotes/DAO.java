@@ -1,4 +1,4 @@
-// Classe criada dentro do pacote "Entidade"
+// Classe criada dentro do pacote "entidade"
 
 package entidade;
 
