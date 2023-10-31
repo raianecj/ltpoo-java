@@ -1,3 +1,4 @@
+// Classe criada dentro do pacote "controle"
 package controle;
 
 public class Aluno {
