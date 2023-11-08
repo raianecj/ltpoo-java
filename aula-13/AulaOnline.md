@@ -9,6 +9,12 @@ Deletar aluno
 
 ![image](https://github.com/raianecj/ltpoo-java/assets/39846447/61b439d9-425c-4455-810d-50bdca30f934)
 
+Listar aluno
 
+![image](https://github.com/raianecj/ltpoo-java/assets/39846447/a06db92d-b1e4-47b8-a148-86de0acb0d0f)
 
+![image](https://github.com/raianecj/ltpoo-java/assets/39846447/78da0b71-721f-40b9-b493-669dfa2536af)
 
+![image](https://github.com/raianecj/ltpoo-java/assets/39846447/18b0d363-e1c2-4687-b82d-b789df80dc99)
+
+![image](https://github.com/raianecj/ltpoo-java/assets/39846447/1c976f62-6664-424a-9706-f73852a66fd4)
