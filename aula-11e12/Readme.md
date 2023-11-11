@@ -22,3 +22,10 @@ Após atualizar o banco
 
 Como está o projeto no netbeans:
 ![image](https://github.com/raianecj/ltpoo-java/assets/39846447/1460faa3-d2a9-4fd0-b101-f3a1b95bd2e3)
+
+### Adicionado o Listar e Deletar
+![image](https://github.com/raianecj/ltpoo-java/assets/39846447/df810ab3-a3a6-447d-bcbb-12fc3d72383e)
+
+![image](https://github.com/raianecj/ltpoo-java/assets/39846447/ca3f219c-5d50-4d54-aaf9-65c07bac2159)
+
+![image](https://github.com/raianecj/ltpoo-java/assets/39846447/f7f8b2ff-0ec4-4066-988b-360473a718ff)
