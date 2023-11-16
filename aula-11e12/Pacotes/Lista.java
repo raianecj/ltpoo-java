@@ -13,12 +13,12 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author jes73
  */
-public class Lista extends javax.swing.JFrame {
+public class ListaAlunos extends javax.swing.JFrame {
 
     /**
-     * Creates new form Lista
+     * Creates new form ListaAlunos
      */
-    public Lista() {
+    public ListaAlunos() {
         initComponents();
     }
 
@@ -33,7 +33,7 @@ public class Lista extends javax.swing.JFrame {
 
         jScrollPane1 = new javax.swing.JScrollPane();
         jTaluno = new javax.swing.JTable();
-        jBimprimir = new javax.swing.JButton();
+        jBlistar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -42,15 +42,15 @@ public class Lista extends javax.swing.JFrame {
 
             },
             new String [] {
-                "Codigo", "Nome", "Email"
+                "Codigo", "Nome"
             }
         ));
         jScrollPane1.setViewportView(jTaluno);
 
-        jBimprimir.setText("Imprimir");
-        jBimprimir.addActionListener(new java.awt.event.ActionListener() {
+        jBlistar.setText("Listar");
+        jBlistar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBimprimirActionPerformed(evt);
+                jBlistarActionPerformed(evt);
             }
         });
 
@@ -59,25 +59,26 @@ public class Lista extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(20, 20, 20)
+                .addGap(17, 17, 17)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jBimprimir)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 452, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(21, Short.MAX_VALUE))
+                    .addComponent(jBlistar)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jBimprimir)
+                .addContainerGap(11, Short.MAX_VALUE)
+                .addComponent(jBlistar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 351, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18))
         );
 
         pack();
     }// </editor-fold>                        
 
-    private void jBimprimirActionPerformed(java.awt.event.ActionEvent evt) {                                           
+    private void jBlistarActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // TODO add your handling code here:
         try {
         Aluno a = new Aluno();
@@ -87,14 +88,14 @@ public class Lista extends javax.swing.JFrame {
         ArrayList<Aluno> alunos = ca.PesquisarTudo();  
         for (int i = 0; i < alunos.size(); i++) {                
             a = alunos.get(i);
-            alunopesque.addRow(new Object[]{a.getCodigo(),a.getNome(),a.getEmail()});
+            alunopesque.addRow(new Object[]{a.getCodigo(),a.getNome()});
         }
         }
        }
        catch (Exception e){
             System.out.println("Erro " + e.getMessage());
        }
-    }                                          
+    }                                        
 
     /**
      * @param args the command line arguments
@@ -113,26 +114,26 @@ public class Lista extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Lista.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ListaAlunos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Lista.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ListaAlunos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Lista.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ListaAlunos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Lista.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ListaAlunos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Lista().setVisible(true);
+                new ListaAlunos().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify                     
-    private javax.swing.JButton jBimprimir;
+    private javax.swing.JButton jBlistar;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTaluno;
     // End of variables declaration                   
